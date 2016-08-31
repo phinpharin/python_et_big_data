@@ -153,16 +153,47 @@ sortie
 
 **list**
 ```python
-ar=[2,5,9,7,2,3,45,4,78]
-print sorted(ar)
+ls=[2,5,9,7,2,3,45,4,78]
+print sorted(ls)
 ```
 **tulipe**
 ```python
-ls=(2,5,9,7,2,3,45,4,78)
-print sorted(ls)
+t=(2,5,9,7,2,3,45,4,78)
+print sorted(t)
 ```
 **dictionnaire**
 ```python
-a=[2,5,9,7,2,3,45,4,78]
-print sorted(a)
+dic ={"un":1,"deux":2}
+print type(dic)
+print dic
+```
+**fonction**
+```python
+#definition
+def fonction_add(a,b):
+    """faire l'addiction de a et b"""
+    return a+b
+
+#ultilisation
+print(fonction_add(4,8))
+```
+**class**
+```python
+class Personne(object):
+    """un test pour une personne"""
+    def __init__(self,nom,age):
+        self.nom=nom
+        self.age=age
+
+
+    def __str__(self):
+
+        return "(nom: %s, age: %d)" %(self.nom,self.age)
+    
+    def faire_addiction(self,x,y):
+        return x +y
+
+a =Personne("Marie",45)
+print a
+print (a.faire_addiction(8,7))
 ```
