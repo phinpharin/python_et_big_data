@@ -197,3 +197,13 @@ a =Personne("Marie",45)
 print a
 print (a.faire_addiction(8,7))
 ```
+**exception**
+```python
+def divide(a,b):
+    try:
+        return a/b
+    except Exception as e:
+        print("erreur %s" % e)
+
+divide(8.,0)
+```
